@@ -28,6 +28,12 @@ body {
 }
 
 .section-title {
-    font-size: 32px;
+    font-size: 35px;
     margin-bottom: 0px;
+}
+
+.section-sub_title {
+    font-size: 25px;
+    margin-top: -15px;
+    margin-bottom: 10px;
 }
