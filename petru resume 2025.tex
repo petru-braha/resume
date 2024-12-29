@@ -1,0 +1,178 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%%-------------------------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Petru Brahă} \\ \vspace{1pt}
+    \small (+40) 740 543 254 $|$ \href{mailto:petrubraha@gmail.com}{\underline{petrubraha@gmail.com}} $|$ 
+    \href{www.linkedin.com/in/petru-braha}{\underline{linkedin.com/in/petru-braha}} $|$
+    \href{https://github.com/petru-braha}{\underline{github.com/petru-braha}}
+\end{center}
+
+
+%%-------------------------------------------
+%% education:
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {"Alexandru Ioan Cuza" University}{Iași, România}
+      {Bachelor's degree in Computer Science}{Sep. 2023 -- June 2026}
+    \resumeSubheading
+      {"Mihai Eminescu" High School}{Iași, România}
+      {Baccalaureate diploma in Mathematics And Computer Science}{Sep. 2018 -- June 2022}
+  \resumeSubHeadingListEnd
+
+%%-------------------------------------------
+%% experience:
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Developer Intern}{July 2025 -- Present}
+      {Texas A\&M University}{College Station, TX}
+      \resumeItemListStart
+        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
+        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
+        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%%-------------------------------------------
+%% projects:
+
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+    \resumeProjectHeading
+    {\textbf{"RR application"} $|$ \emph{C++, GoogleTest, OpenGL}}{June 2024 -- Present}
+    \resumeItemListStart
+      \resumeItem{Created data manipulation programs, resulting in ten complex data structures, by considering an object-oriented approach and the SOLID principles}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+          {\textbf{"YP compiler"} $|$ \emph{C++, GoogleTest, OpenGL}}{June 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Created data manipulation programs, resulting in ten complex data structures, by considering an object-oriented approach and the SOLID principles}
+          \resumeItemListEnd
+    
+    \resumeProjectHeading
+          {\textbf{"VDS library"} $|$ \emph{C++, GoogleTest, OpenGL}}{June 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Created data manipulation programs, resulting in ten complex data structures, by considering an object-oriented approach and the SOLID principles}
+            \resumeItem{Ensured their efficiency, improving their execution time by at least 30\%, by applying complexity analysis}
+            \resumeItem{Attained project’s portability with 100\% of POSIX systems, by using C’s standard calls and class templates}
+            \resumeItem{Embraced test-driven development, delivering robustness to the library, by composing varied test cases}
+            \resumeItem{Defined all possible error states, accomplishing competent error handling and developing troubleshooting skills, by employing the standard exceptions and the usage of the debugger}
+            \resumeItem{Achieved version control to track the progress, accepting Git’s technology}
+            \resumeItem{Succeeded in drawing a GUI, assuring a simple, clean, visual explanation of the queries for users, by adopting the OOP’s design patterns and shaders from OpenGL}
+          \resumeItemListEnd
+      
+    \resumeProjectHeading
+          {\textbf{"BetterWR application"} $|$ \emph{C++, Huffman, Lempel-Ziv-Welch}}{Sep. 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Implemented two powerful data compression algorithms, achieving compatibility in any file system kind, with STL and 'filesystem' library}
+            \resumeItem{Solved the challenge of huge amounts of data, gaining a strong understanding of the core programming concepts, by computing complexity analysis for different approaches}
+            \resumeItem{Reached favorable efficiency of the algorithms, improving compression rate by 20\%, by using TAR file-format and fast file reading and writing operations}
+            \resumeItem{Performed a developer console, conceiving a professional UX, by constructing a simple command format}
+            \resumeItem{Forged a GUI, simulating a well-organized file explorer, by designing textures with Photoshop, and practicing an academic tool for drawing}
+            \resumeItem{Managed my team in development, shaping excellent communication, by proving my interpersonal skills, and using Git as a source control system}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%%-------------------------------------------
+%% skills:
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, C, Java, SQL, R, Bash, PowerShell, Assembly Language(x86)} \\
+     \textbf{Technologies}{: Git, HTML, CSS } \\
+     \textbf{Libraries}{: GoogleTest, GMock, OpenGL, Standard Template Library}
+    }}
+ \end{itemize}
+
+
+\end{document}
