@@ -1,0 +1,167 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%%-------------------------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Petru Brahă} \\ \vspace{1pt}
+    \small (+40) 740 543 254 $|$ \href{mailto:petrubraha@gmail.com}{\underline{petrubraha@gmail.com}} $|$ 
+    \href{www.linkedin.com/in/petru-braha}{\underline{linkedin.com/in/petru-braha}} $|$
+    \href{https://github.com/petru-braha}{\underline{github.com/petru-braha}}
+\end{center}
+
+
+%%-------------------------------------------
+%% education:
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {"Alexandru Ioan Cuza" University}{Iași, România}
+      {Bachelor's degree in Computer Science}{Sep. 2023 -- June 2026}
+    \resumeSubheading
+      {"Mihai Eminescu" High School}{Iași, România}
+      {Baccalaureate diploma in Mathematics And Computer Science}{Sep. 2018 -- June 2022}
+  \resumeSubHeadingListEnd
+
+%%-------------------------------------------
+%% experience:
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer Intern}{July 2025 -- November 2025}
+      {Amazon}{Iași, România}
+      \resumeItemListStart
+        \resumeItem{Collaborate with experienced cross-disciplinary Amazonians to conceive, design, and bring to market innovative products and services}
+        \resumeItem{Design and build innovative technologies in a large distributed computing environment and help lead fundamental changes in the industry}
+        \resumeItem{ Build distributed storage, index, and query systems that are scalable, fault-tolerant, low cost, and easy to manage/use}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%%-------------------------------------------
+%% projects:
+
+\section{Projects}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+    {\textbf{"GiftHub"} $|$ \emph{Leadership, Typescript}}{Nov. 2024 -- Feb. 2025}
+    \resumeItemListStart
+      \resumeItem{Delivered a fully functional, 24/7 live platform, by leading the development as the Product Owner and applying Scrum methodology effectively across the team}
+      \resumeItem{Ensured on-time project delivery by defining clear objectives, and realistic deadlines, and aligning the development efforts through qualitative communication}
+      \resumeItem{Participated in technical design by creating the database schema and the page routers, enhancing the overall system structure and user navigation}
+      \resumeItem{Contributed to the backend infrastructure by working with Typescript in the T3 Stack (Next.js, TRPC, Prisma), enabling robust API architecture}
+      \resumeItem{Strengthened code quality and maintainability by setting up SonarQube, achieving over 90\% code coverage through collaboration with the QA team}
+      \resumeItem{Improved deployment reliability and system performance by leading DevOps efforts, including defining the environments, the CI/CD pipelines, and the branching strategy}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{"RR application"} $|$ \emph{C, C++, Network Engineering}}{Nov. 2024 -- Feb. 2025}
+    \resumeItemListStart
+      \resumeItem{Coded an open-source application that clients can query about trains’ schedules for their location/time, applying the client-server paradigm}
+      \resumeItem{Constructed the server application, assuring high transmission speed, by implementing a pre-threaded execution and I/O multiplexing}
+      \resumeItem{Designed the transport protocol, assessing high speed and data correctness, exploiting TCP and UDP in their best use cases}
+      \resumeItem{Gathered resources to maintain the server accessible 24/7, resembling a realistic, public, and functional service, by utilizing a remote shell provided by my university}
+      \resumeItem{Compiled a C++ program that randomly generates the trains’ routes employing a powerful pseudo-random number generator, Mersenne Twister}
+      \resumeItem{Finished the project, documentation, and further features before the deadline, recording optimal time management by consistently developing daily}
+    \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+%%-------------------------------------------
+%% skills:
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Assembly Language(x86), C, C++, Java, PHP, Typescript, SQL, Bash, PowerShell, R} \\
+     \textbf{Technologies}{: Git, Makefile, Flex, Bison(Yacc), HTML, CSS, LaTeX } \\
+     \textbf{Libraries}{: GoogleTest, GMock, OpenGL, Standard Template Library}
+    }}
+ \end{itemize}
+
+
+\end{document}
